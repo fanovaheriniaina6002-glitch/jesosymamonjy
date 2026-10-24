@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="142dp"
+    android:viewportWidth="100"
+    android:viewportHeight="142">
+    <path
+        android:fillColor="#592516"
+        android:pathData="M0,0h100v142h-100z" />
+    <!-- Archway / Gate Motif for "Tafasokatra ve ny Vavahadin'ny Helo ?" -->
+    <path
+        android:fillColor="#FFE0B066"
+        android:pathData="M30,88 L30,44 C30,28 70,28 70,44 L70,88 L62,88 L62,46 C62,36 38,36 38,46 L38,88 Z" />
+    <path
+        android:fillColor="#FFF9E8D0"
+        android:pathData="M48,42 h4 v10 h8 v4 h-8 v16 h-4 v-16 h-8 v-4 h8 z" />
+</vector>

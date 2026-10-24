@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportWidth="160"
+    android:viewportHeight="160">
+
+    <!-- Outer Golden Laurel / Emblem Ring -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M80,14 A66,66 0 1,1 79.9,14"
+        android:strokeWidth="1.8"
+        android:strokeColor="#D4AF37" />
+
+    <!-- Globe Circle (Soft Ivory & Gold Meridians) -->
+    <path
+        android:fillColor="#FFFDF9"
+        android:pathData="M80,34 A42,42 0 1,1 79.9,34 Z"
+        android:strokeWidth="2"
+        android:strokeColor="#D4AF37" />
+
+    <!-- Globe Latitude & Longitude Lines -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M38,76 H122 M44,58 H116 M44,94 H116"
+        android:strokeWidth="1.2"
+        android:strokeColor="#66D4AF37" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M80,34 C62,50 62,102 80,118 M80,34 C98,50 98,102 80,118 M80,34 V118"
+        android:strokeWidth="1.2"
+        android:strokeColor="#66D4AF37" />
+
+    <!-- Golden Sunburst Rays Behind Cross -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M80,22 L80,30 M52,32 L57,38 M108,32 L103,38 M38,54 L45,57 M122,54 L115,57"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeColor="#D4AF37" />
+
+    <!-- Crisp Garnet / Red Cross Rising From Center -->
+    <path
+        android:fillColor="#781C2E"
+        android:pathData="M74,26 H86 V48 H106 V60 H86 V98 H74 V60 H54 V48 H74 Z"
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF" />
+
+    <!-- Open Sacred Bible at Base -->
+    <!-- Bible Cover Base -->
+    <path
+        android:fillColor="#781C2E"
+        android:pathData="M36,96 C50,92 66,95 80,103 C94,95 110,92 124,96 L128,126 C112,121 95,124 80,132 C65,124 48,121 32,126 Z" />
+    <!-- Bible White Pages Left -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,92 C53,89 67,92 79,100 L79,126 C67,119 53,116 38,120 Z"
+        android:strokeWidth="1.2"
+        android:strokeColor="#D4AF37" />
+    <!-- Bible White Pages Right -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,92 C107,89 93,92 81,100 L81,126 C93,119 107,116 122,120 Z"
+        android:strokeWidth="1.2"
+        android:strokeColor="#D4AF37" />
+    <!-- Scripture Text Lines on Open Bible -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M47,100 L72,104 M46,106 L72,110 M45,112 L72,116 M113,100 L88,104 M114,106 L88,110 M115,112 L88,116"
+        android:strokeWidth="1.4"
+        android:strokeLineCap="round"
+        android:strokeColor="#781C2E" />
+    <!-- Golden Bookmark Ribbon -->
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M78,126 H82 V140 L80,136 L78,140 Z" />
+</vector>

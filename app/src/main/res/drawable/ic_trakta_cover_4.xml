@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="142dp"
+    android:viewportWidth="100"
+    android:viewportHeight="142">
+    <path
+        android:fillColor="#4A1822"
+        android:pathData="M0,0h100v142h-100z" />
+    <!-- Calvary Three Crosses Motif for "Paska Iray..." -->
+    <path
+        android:fillColor="#FFF9E8D0"
+        android:pathData="M47,22 h6 v12 h10 v5 h-10 v24 h-6 v-24 h-10 v-5 h10 z" />
+    <path
+        android:fillColor="#B3F9E8D0"
+        android:pathData="M26,38 h4 v8 h7 v4 h-7 v16 h-4 v-16 h-7 v-4 h7 z" />
+    <path
+        android:fillColor="#B3F9E8D0"
+        android:pathData="M70,38 h4 v8 h7 v4 h-7 v16 h-4 v-16 h-7 v-4 h7 z" />
+    <path
+        android:fillColor="#4D000000"
+        android:pathData="M10,88 C30,66 70,66 90,88 L100,98 L0,98 Z" />
+</vector>

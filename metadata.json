@@ -1,0 +1,6 @@
+{
+  "name": "Jesosy Mamonjy",
+  "description": "100% offline Christian songbook and teachings application (Jesosy Mamonjy M. A. Daoud) with local SQLite/Room database.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

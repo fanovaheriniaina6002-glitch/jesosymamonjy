@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Exact Design Tokens from Jesosy Mamonjy UI -->
+    <color name="primary">#59021A</color>
+    <color name="primary_container">#781C2E</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="surface">#FBF9FA</color>
+    <color name="surface_container_lowest">#FFFFFF</color>
+    <color name="on_surface">#1B1C1D</color>
+    <color name="on_surface_variant">#564243</color>
+    <color name="on_surface_variant_hint">#897173</color>
+    <color name="outline">#897173</color>
+    <color name="border_eae0e2">#EAE0E2</color>
+    <color name="bottom_nav_border">#8F253B</color>
+    <color name="pill_btn_bg">#F7F0F2</color>
+    <color name="hikaroka_pill_bg">#FAF0F2</color>
+    <color name="hikaroka_badge_border">#F0D5DA</color>
+    <color name="chip_active_bg">#5A1827</color>
+    <color name="numpad_key_bg">#FAF8F9</color>
+    <color name="numpad_scrim">#731B1C1D</color>
+    <color name="hero_badge_text">#F9E8D0</color>
+    <color name="white_80">#F5E6E8</color>
+    <color name="white_85">#FAF0F2</color>
+    <color name="white_90">#FFFFFF</color>
+
+    <!-- Bento Grid Quick Access Tokens -->
+    <color name="bento_trakta_bg">#F9E8EA</color>
+    <color name="bento_fotoana_bg">#FDF4E7</color>
+    <color name="bento_fotoana_tint">#B8860B</color>
+    <color name="bento_rakitsary_bg">#F2ECEE</color>
+    <color name="bento_card_title">#2A2426</color>
+    <color name="fav_btn_bg">#F9F1F2</color>
+
+    <!-- Legacy / Shared Tokens -->
+    <color name="grenat_primary">#781C2E</color>
+    <color name="grenat_dark">#520E1C</color>
+    <color name="grenat_light">#97444F</color>
+    <color name="grenat_surface">#F9F1F2</color>
+    <color name="gold_accent">#F9E8D0</color>
+    <color name="bento_bg">#FAF8F9</color>
+    <color name="bento_card_bg">#FFFFFF</color>
+    <color name="bento_pill_bg">#FFFFFF</color>
+    <color name="bento_pill_dark">#1C1C1E</color>
+    <color name="bento_stroke">#EAE0E2</color>
+    <color name="bento_surface_secondary">#F5F3F4</color>
+    <color name="text_primary">#1B1C1D</color>
+    <color name="text_secondary">#564243</color>
+    <color name="text_muted">#897173</color>
+    <color name="text_on_grenat">#FFFFFF</color>
+    <color name="text_on_grenat_muted">#F9E8D0</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF781C2E</color>
+    <color name="purple_700">#FF59021A</color>
+    <color name="teal_200">#FFF9E8D0</color>
+    <color name="teal_700">#FFB8860B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

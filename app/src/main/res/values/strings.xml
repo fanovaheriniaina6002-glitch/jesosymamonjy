@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Jesosy Mamonjy</string>
+    <string name="app_full_title">JESOSY MAMONJY M. A. DAOUD</string>
+    <string name="tab_fandraisana">Fandraisana</string>
+    <string name="tab_hikaroka">Hikaroka</string>
+    <string name="tab_hira_tiako">Hira Tiako</string>
+    <string name="tab_kaonty">Kaonty</string>
+    <string name="search_hint">Hitady hira na laharana...</string>
+    <string name="numpad_desc">Laharana hira</string>
+    <string name="hero_badge">HIRA VOAFANTINA ANIO</string>
+    <string name="categories_title">Sokajy sy Fampianarana</string>
+    <string name="songs_list_title">Lisitry ny Hira</string>
+</resources>

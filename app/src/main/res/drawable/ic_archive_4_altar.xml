@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="260dp"
+    android:viewportWidth="200"
+    android:viewportHeight="260">
+    <path
+        android:fillColor="#E8EAED"
+        android:pathData="M0,0h200v260h-200z" />
+    <!-- Matching the exact placeholder SVG motif in Card 4 & 5 -->
+    <path
+        android:fillColor="#BDC1C6"
+        android:pathData="M135,85 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0" />
+    <path
+        android:fillColor="#BDC1C6"
+        android:pathData="M65,100 l26,34 l18,-13 l34,47 H40 z" />
+</vector>

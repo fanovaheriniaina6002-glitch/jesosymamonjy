@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Premium Dark Bento Mode (iOS 18 Inspired — 0% Blur / 100% Solid / 60 FPS) -->
+    <!-- 1. Background: Gris-Grenat extrêmement profond #120A0B -->
+    <!-- 2. Surfaces / Bento Cards / TopBar / NavBar: Gris-Rouge chaud et élégant #1E1214 -->
+    <!-- 3. Textes principaux: #F5E6E8 | Textes secondaires: #A69497 -->
+    <!-- 4. Accentuation & Icônes actives: #D4AF37 -->
+    <!-- 5. Bordures (Hairlines 1.dp): #382528 -->
+
+    <color name="primary">#D4AF37</color>
+    <color name="primary_container">#800020</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="surface">#120A0B</color>
+    <color name="surface_container_lowest">#1E1214</color>
+    <color name="on_surface">#F5E6E8</color>
+    <color name="on_surface_variant">#A69497</color>
+    <color name="on_surface_variant_hint">#A69497</color>
+    <color name="outline">#A69497</color>
+    <color name="border_eae0e2">#382528</color>
+    <color name="bottom_nav_border">#382528</color>
+    <color name="pill_btn_bg">#28181B</color>
+    <color name="hikaroka_pill_bg">#28181B</color>
+    <color name="hikaroka_badge_border">#382528</color>
+    <color name="chip_active_bg">#800020</color>
+    <color name="numpad_key_bg">#28181B</color>
+    <color name="numpad_scrim">#CC120A0B</color>
+    <color name="hero_badge_text">#D4AF37</color>
+    <color name="white_80">#A69497</color>
+    <color name="white_85">#F5E6E8</color>
+    <color name="white_90">#F5E6E8</color>
+
+    <!-- Bento Grid Quick Access Tokens -->
+    <color name="bento_trakta_bg">#1E1214</color>
+    <color name="bento_fotoana_bg">#1E1214</color>
+    <color name="bento_fotoana_tint">#D4AF37</color>
+    <color name="bento_rakitsary_bg">#1E1214</color>
+    <color name="bento_card_title">#F5E6E8</color>
+    <color name="fav_btn_bg">#28181B</color>
+
+    <!-- Legacy / Shared Tokens -->
+    <color name="grenat_primary">#800020</color>
+    <color name="grenat_dark">#520E1C</color>
+    <color name="grenat_light">#97444F</color>
+    <color name="grenat_surface">#1E1214</color>
+    <color name="gold_accent">#D4AF37</color>
+    <color name="bento_bg">#120A0B</color>
+    <color name="bento_card_bg">#1E1214</color>
+    <color name="bento_pill_bg">#1E1214</color>
+    <color name="bento_pill_dark">#28181B</color>
+    <color name="bento_stroke">#382528</color>
+    <color name="bento_surface_secondary">#28181B</color>
+    <color name="text_primary">#F5E6E8</color>
+    <color name="text_secondary">#A69497</color>
+    <color name="text_muted">#A69497</color>
+    <color name="text_on_grenat">#FFFFFF</color>
+    <color name="text_on_grenat_muted">#A69497</color>
+
+    <color name="black">#FF120A0B</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

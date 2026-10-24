@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="142dp"
+    android:viewportWidth="100"
+    android:viewportHeight="142">
+    <path
+        android:fillColor="#581422"
+        android:pathData="M0,0h100v142h-100z" />
+    <!-- Celestial Rays & Golden Crown / Cross Motif for "Tena Misy ny Lanitra" -->
+    <path
+        android:fillColor="#33F9E8D0"
+        android:pathData="M50,38 m-24,0 a24,24 0 1,0 48,0 a24,24 0 1,0 -48,0" />
+    <path
+        android:fillColor="#FFF9E8D0"
+        android:pathData="M47,20 h6 v13 h12 v6 h-12 v22 h-6 v-22 h-12 v-6 h12 z" />
+    <path
+        android:fillColor="#66FFFFFF"
+        android:pathData="M24,74 C34,68 66,68 76,74 L82,92 L18,92 Z" />
+</vector>

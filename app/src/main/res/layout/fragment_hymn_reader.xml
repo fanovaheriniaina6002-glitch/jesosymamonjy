@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hymn_reader_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_gradient"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Main Column: Sticky Top Header + Scrollable Lyrics Canvas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 1. TOP HEADER (Floating Bento Pill) -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="4dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/surface_container_lowest"
+                app:cardCornerRadius="26dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/border_eae0e2"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="12dp">
+
+                    <!-- Back Navigation Button -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/btn_reader_back"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="@color/surface_container_lowest"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:rippleColor="#F5F3F4">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="Hiverina"
+                            android:src="@drawable/ic_arrow_back"
+                            app:tint="@color/primary_container" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Song Metadata Anchor Header (AnimatedContent Container) -->
+                    <FrameLayout
+                        android:id="@+id/header_title_transition_container"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:clipChildren="true">
+
+                        <TextView
+                            android:id="@+id/tv_reader_header_title_outgoing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/plus_jakarta_sans"
+                            android:gravity="center"
+                            android:letterSpacing="-0.01"
+                            android:maxLines="1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/primary_container"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_reader_header_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/plus_jakarta_sans"
+                            android:gravity="center"
+                            android:letterSpacing="-0.01"
+                            android:maxLines="1"
+                            android:text="4. INDRO NY TOMPO JESOSY"
+                            android:textAllCaps="true"
+                            android:textColor="@color/primary_container"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <!-- Mode Toggle Button -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/btn_reader_theme_toggle"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="@color/surface_container_lowest"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="0dp"
+                        app:rippleColor="#F5F3F4">
+
+                        <ImageView
+                            android:id="@+id/icon_reader_theme_toggle"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="Hanova endrika"
+                            android:src="@drawable/ic_light_mode"
+                            app:tint="@color/primary_container" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </FrameLayout>
+
+        <!-- MAIN SCROLLABLE CONTENT CANVAS (AnimatedContent Container) -->
+        <FrameLayout
+            android:id="@+id/lyrics_transition_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipChildren="true">
+
+            <ImageView
+                android:id="@+id/iv_lyrics_transition_snapshot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:importantForAccessibility="no"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/reader_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:fillViewport="true"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="116dp">
+
+            <!-- 2. LYRICS CARD (Main Bento Card) -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_reader_lyrics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/surface_container_lowest"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/border_eae0e2"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="24dp"
+                    android:paddingTop="24dp"
+                    android:paddingEnd="80dp"
+                    android:paddingBottom="96dp">
+
+                    <!-- ANDININY 1 -->
+                    <LinearLayout
+                        android:id="@+id/section_verse_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/badge_verse_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:background="@drawable/bg_verse_badge"
+                            android:fontFamily="@font/plus_jakarta_sans"
+                            android:letterSpacing="0.06"
+                            android:paddingStart="12dp"
+                            android:paddingTop="4dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="4dp"
+                            android:text="ANDININY 1"
+                            android:textAllCaps="true"
+                            android:textColor="@color/primary_container"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_verse_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter"
+                            android:lineSpacingExtra="10dp"
+                            android:text="Indro ny Tompo Jesosy mandalo,\nMiantso anao izao anio izao;\nFaingàna fa aza mampisalasala,\nRaiso ny famonjena atolony anao."
+                            android:textColor="@color/on_surface"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <!-- ISAN'ANDININY (Chorus Bento Callout) -->
+                    <LinearLayout
+                        android:id="@+id/section_chorus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="28dp"
+                        android:orientation="horizontal">
+
+                        <!-- Left 3.5dp vertical primary_container border bar -->
+                        <View
+                            android:layout_width="3.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/primary_container" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:orientation="vertical"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:contentDescription="@null"
+                                    android:src="@drawable/ic_library_music"
+                                    app:tint="@color/primary_container" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="6dp"
+                                    android:fontFamily="@font/plus_jakarta_sans"
+                                    android:letterSpacing="0.06"
+                                    android:text="ISAN'ANDININY"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/primary_container"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_chorus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter"
+                                android:lineSpacingExtra="10dp"
+                                android:text="Tonga Izy hanavotra anao,\nNanome ny ainy teo Kalvary;\nSasany amin'ny ràny sarobidy,\nHo afaka amin'ny heloka rehetra ianao."
+                                android:textColor="@color/primary_container"
+                                android:textSize="15sp"
+                                android:textStyle="italic" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- ANDININY 2 -->
+                    <LinearLayout
+                        android:id="@+id/section_verse_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/badge_verse_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:background="@drawable/bg_verse_badge"
+                            android:fontFamily="@font/plus_jakarta_sans"
+                            android:letterSpacing="0.06"
+                            android:paddingStart="12dp"
+                            android:paddingTop="4dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="4dp"
+                            android:text="ANDININY 2"
+                            android:textAllCaps="true"
+                            android:textColor="@color/primary_container"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_verse_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter"
+                            android:lineSpacingExtra="10dp"
+                            android:text="Efa voaloa ny trosanao rehetra,\nNesoriny koa ny fahotanao;\nNy fiadanam-po no omeny anao,\nFiainana mandrakizay no lovanao."
+                            android:textColor="@color/on_surface"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <!-- ANDININY 3 -->
+                    <LinearLayout
+                        android:id="@+id/section_verse_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/badge_verse_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:background="@drawable/bg_verse_badge"
+                            android:fontFamily="@font/plus_jakarta_sans"
+                            android:letterSpacing="0.06"
+                            android:paddingStart="12dp"
+                            android:paddingTop="4dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="4dp"
+                            android:text="ANDININY 3"
+                            android:textAllCaps="true"
+                            android:textColor="@color/primary_container"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_verse_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter"
+                            android:lineSpacingExtra="10dp"
+                            android:text="Miderà Azy ry olom-boavonjy,\nAmbarao ny fitiavany lehibe;\nJesosy no Tompo sy Mpanavotra,\nVoninahitra anie ho Azy mandrakizay."
+                            android:textColor="@color/on_surface"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <!-- Dynamic container for ANDININY 4, 5, 6+ from hymns.json -->
+                    <LinearLayout
+                        android:id="@+id/extra_verses_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.core.widget.NestedScrollView>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- 3. FLOATING ACTION MENU (Unobtrusive Vertical FAB Bento Pill) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/reader_floating_action_pill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="96dp"
+        app:cardBackgroundColor="@color/surface_container_lowest"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/border_eae0e2"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="6dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="8dp">
+
+            <!-- Share Action -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_reader_share"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/surface_container_lowest"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:rippleColor="#F9E8EA">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Hizara ny hira"
+                    android:src="@drawable/ic_share"
+                    app:tint="@color/primary_container" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Copy Action -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_reader_copy"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/surface_container_lowest"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:rippleColor="#F9E8EA">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Handika tononkira"
+                    android:src="@drawable/ic_content_copy"
+                    app:tint="@color/primary_container" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Favorite Action -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_reader_fav"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/surface_container_lowest"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:rippleColor="#F9E8EA">
+
+                <ImageView
+                    android:id="@+id/icon_reader_fav"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Hira ankafizina"
+                    android:src="@drawable/ic_favorite_border"
+                    app:tint="@color/primary_container" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 4. BOTTOM CONTROL BAR (Solid Burgundy Bento Pill Docked Floating) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/reader_bottom_control_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/primary_container"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#59021A"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingTop="14dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="14dp">
+
+            <!-- Previous Hymn Link -->
+            <LinearLayout
+                android:id="@+id/btn_prev_hymn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_chevron_left"
+                    app:tint="@color/on_primary" />
+
+                <TextView
+                    android:id="@+id/tv_prev_hymn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/plus_jakarta_sans"
+                    android:text="Hira 3"
+                    android:textColor="@color/on_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Font Size Dynamic Step Controller Inner Capsule -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#9A223B"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="0dp"
+                app:strokeColor="#B83B54"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="14dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="6dp">
+
+                    <TextView
+                        android:id="@+id/btn_font_decrease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/plus_jakarta_sans"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:text="A-"
+                        android:textColor="@color/on_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="|"
+                        android:textColor="#66FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/btn_font_increase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/plus_jakarta_sans"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:text="A+"
+                        android:textColor="@color/on_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Next Hymn Link -->
+            <LinearLayout
+                android:id="@+id/btn_next_hymn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_next_hymn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:fontFamily="@font/plus_jakarta_sans"
+                    android:text="Hira 5"
+                    android:textColor="@color/on_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_chevron_right"
+                    app:tint="@color/on_primary" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 5. INSTAGRAM-STYLE DOUBLE-TAP HEART OVERLAY (80dp, Garnet/Red, 60 FPS zero blur) -->
+    <ImageView
+        android:id="@+id/iv_double_tap_heart"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:alpha="0"
+        android:clickable="false"
+        android:focusable="false"
+        android:importantForAccessibility="no"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:src="@drawable/ic_heart"
+        android:visibility="gone"
+        app:tint="#9E1B34" />
+
+</FrameLayout>

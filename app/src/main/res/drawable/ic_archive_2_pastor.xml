@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="260dp"
+    android:viewportWidth="200"
+    android:viewportHeight="260">
+    <path
+        android:fillColor="#9E826C"
+        android:pathData="M0,0h200v260h-200z" />
+    <!-- Vintage Sepia Portrait Silhouette -->
+    <path
+        android:fillColor="#F4ECE4"
+        android:pathData="M78,78 m-20,0 a20,20 0 1,0 40,0 a20,20 0 1,0 -40,0" />
+    <path
+        android:fillColor="#F4ECE4"
+        android:pathData="M45,155 C45,122 62,108 78,108 C94,108 111,122 111,155 Z" />
+    <path
+        android:fillColor="#E8DCD0"
+        android:pathData="M128,86 m-17,0 a17,17 0 1,0 34,0 a17,17 0 1,0 -34,0" />
+    <path
+        android:fillColor="#E8DCD0"
+        android:pathData="M100,155 C100,126 114,114 128,114 C142,114 156,126 156,155 Z" />
+</vector>

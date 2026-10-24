@@ -1,0 +1,352 @@
+    // mpitandrina_amin_ny_fiangonana_jesosy_mamonjy.jpg
+    {
+        id = 1,
+        title = "Mpitandrina",
+        subtitle = "Mpitandrina ao amin'ny Fiangonana",
+        description = "Ireo mpitandrina ao amin'ny Fiangonana Jesosy Mamonjy M.A DAOUD",
+        category = "Mpitandrina"
+    },
+    // mpitandrina_amin_ny_fiangonana_jesosy_mamonjy_2.jpg
+    {
+        id = 2,
+        title = "Mpitandrina",
+        subtitle = "Mpitandrina ao amin'ny Fiangonana",
+        description = "Ireo mpitandrina ao amin'ny Fiangonana Jesosy Mamonjy M.A DAOUD",
+        category = "Mpitandrina"
+    },
+    // hady_fototra_fiangonana_jesosy_mamonjy_atanety_be_bord.jpg
+    {
+        id = 3,
+        title = "Hady Fototra",
+        subtitle = "Fiangonana Jesosy Mamonjy Atanety Be Nord",
+        description = "Hady fototra fiangonana Jesosy Mamonjy M.A Daoud Atanety be Nord",
+        category = "fotoana"
+    },
+    // fitoriana_filazan_tsara_ambatondrazaka3.jpg
+    {
+        id = 4,
+        title = "Fitoriana Filazan-tsara",
+        subtitle = "Ambatondrazaka",
+        description = "Fitoriana Filazantsara ataon'ireo rahalahy sy anabavy any Ambatondrazaka",
+        category = "fotoana"
+    },
+    // fitoriana_filazan_tsara_ambatondrazaka2.jpg
+    {
+        id = 5,
+        title = "Fitoriana Filazan-tsara",
+        subtitle = "Ambatondrazaka",
+        description = "Fitoriana Filazantsara ataon'ireo rahalahy sy anabavy any Ambatondrazaka",
+        category = "fotoana"
+    },
+    // fitoriana_filazan_tsara_ambatondrazaka.jpg
+    {
+        id = 6,
+        title = "Fitoriana Filazan-tsara",
+        subtitle = "Ambatondrazaka",
+        description = "Fitoriana Filazantsara ataon'ireo rahalahy sy anabavy any Ambatondrazaka",
+        category = "fotoana"
+    },
+    // evangelisation_tamatave.jpg
+    {
+        id = 7,
+        title = "Evangélisation",
+        subtitle = "Tamatave",
+        description = "Evangelision notanterahina tany Toamasina ny ",
+        category = "fotoana"
+    },
+    // vatomandry_maintinandry.jpg
+    {
+        id = 8,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Vatomandry Maintinandry",
+        description = "Fiangonana Jesosy Mamonjy M.A any Vatomandry Maintinandry",
+        category = "Fiangonana"
+    },
+    // vakinankaratra_behenjy.jpg
+    {
+        id = 9,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Vakinankaratra Behenjy",
+        description = "Fiangonana Jesosy Mamonjy M.A any Vakinankaratra Behenjy",
+        category = "Fiangonana"
+    },
+    // toamasina_mangarano.jpg
+    {
+        id = 10,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Toamasina Mangarano",
+        description = "Fiangonana Jesosy Mamonjy M.A any Toamasina Mangarano",
+        category = "Fiangonana"
+    },
+    // talata_ampano_vohibato_fianarantsoa.jpg
+    {
+        id = 11,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Talata Ampano Vohibato Fianarantsoa",
+        description = "Fiangonana Jesosy Mamonjy M.A any Talata Ampano Vohibato Fianarantsoa",
+        category = "Fiangonana"
+    },
+    // sandravola_atsimondrano.jpg
+    {
+        id = 12,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Sandravola Atsimondrano",
+        description = "Fiangonana Jesosy Mamonjy M.A any Sandravola Atsimondrano",
+        category = "Fiangonana"
+    },
+    // morafeno_ankazobe.jpg
+    {
+        id = 13,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Morafeno Ankazobe",
+        description = "Fiangonana Jesosy Mamonjy M.A any Morafeno Ankazobe",
+        category = "Fiangonana"
+    },
+    // manjakandriana_ankazondandy.jpg
+    {
+        id = 14,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Manjakandriana Ankazondandy",
+        description = "Fiangonana Jesosy Mamonjy M.A any Manjakandriana Ankazondandy",
+        category = "Fiangonana"
+    },
+    // mangarivotra_andriba_maevatanana.jpg
+    {
+        id = 15,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Mangarivotra Andriba Maevatanana",
+        description = "Fiangonana Jesosy Mamonjy M.A any Mangarivotra Andriba Maevatanana",
+        category = "Fiangonana"
+    },
+    // mangaika_ampasy_fort_dauphin.jpg
+    {
+        id = 16,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Mangaika Ampasy Fort-Dauphin",
+        description = "Fiangonana Jesosy Mamonjy M.A any Mangaika Ampasy Fort-Dauphin",
+        category = "Fiangonana"
+    },
+    // maibahoaka_ivato.png
+    {
+        id = 17,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Maibahoaka Ivato",
+        description = "Fiangonana Jesosy Mamonjy M.A any Maibahoaka Ivato",
+        category = "Fiangonana"
+    },
+    // maibahoaka_ambohidratrimo.jpg
+    {
+        id = 18,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Maibahoaka Ambohidratrimo",
+        description = "Fiangonana Jesosy Mamonjy M.A any Maibahoaka Ambohidratrimo",
+        category = "Fiangonana"
+    },
+    // mahanoro_menagisa.jpg
+    {
+        id = 19,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Mahanoro Menagisa",
+        description = "Fiangonana Jesosy Mamonjy M.A any Mahanoro Menagisa",
+        category = "Fiangonana"
+    },
+    // maevatanana.jpg
+    {
+        id = 20,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Maevatanana",
+        description = "Fiangonana Jesosy Mamonjy M.A any Maevatanana",
+        category = "Fiangonana"
+    },
+    // ivory_avaratra_fianarantsoa.jpg
+    {
+        id = 21,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Ivory Avaratra Fianarantsoa",
+        description = "Fiangonana Jesosy Mamonjy M.A any Ivory Avaratra Fianarantsoa",
+        category = "Fiangonana"
+    },
+    // fjm_carion_manjakandriana.jpg
+    {
+        id = 22,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "FJM Carion Manjakandriana",
+        description = "Fiangonana Jesosy Mamonjy M.A any FJM Carion Manjakandriana",
+        category = "Fiangonana"
+    },
+    // fjm_andandihazo_alakamisy_fenoarivo.jpg
+    {
+        id = 23,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "FJM Andandihazo Alakamisy Fenoarivo",
+        description = "Fiangonana Jesosy Mamonjy M.A any FJM Andandihazo Alakamisy Fenoarivo",
+        category = "Fiangonana"
+    },
+    // fjm_ambositra.jpg
+    {
+        id = 24,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "FJM Ambositra",
+        description = "Fiangonana Jesosy Mamonjy M.A any FJM Ambositra",
+        category = "Fiangonana"
+    },
+    // fjm_ambatomaro.jpg
+    {
+        id = 25,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "FJM Ambatomaro",
+        description = "Fiangonana Jesosy Mamonjy M.A any FJM Ambatomaro",
+        category = "Fiangonana"
+    },
+    // fianarantsoa_ambahisamotra.jpg
+    {
+        id = 26,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Fianarantsoa Ambahisamotra",
+        description = "Fiangonana Jesosy Mamonjy M.A any Fianarantsoa Ambahisamotra",
+        category = "Fiangonana"
+    },
+    // bongolava_ambohimarina.jpg
+    {
+        id = 27,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Bongolava Ambohimarina",
+        description = "Fiangonana Jesosy Mamonjy M.A any Bongolava Ambohimarina",
+        category = "Fiangonana"
+    },
+    // behenjy.jpg
+    {
+        id = 28,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Behenjy",
+        description = "Fiangonana Jesosy Mamonjy M.A any Behenjy",
+        category = "Fiangonana"
+    },
+    // avarajozoro_ambohitratrimo.jpg
+    {
+        id = 29,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Avarajozoro Ambohidratrimo",
+        description = "Fiangonana Jesosy Mamonjy M.A any Avarajozoro Ambohidratrimo",
+        category = "Fiangonana"
+    },
+    // avaradrano_ankadinandriana.jpg
+    {
+        id = 30,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Avaradrano Ankadinandriana",
+        description = "Fiangonana Jesosy Mamonjy M.A any Avaradrano Ankadinandriana",
+        category = "Fiangonana"
+    },
+    // avaradrano_ambohimangakely.jpg
+    {
+        id = 31,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Avaradrano Ambohimangakely",
+        description = "Fiangonana Jesosy Mamonjy M.A any Avaradrano Ambohimangakely",
+        category = "Fiangonana"
+    },
+    // atsimondrano_ampitatafika.jpg
+    {
+        id = 32,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Atsimondrano Ampitatafika",
+        description = "Fiangonana Jesosy Mamonjy M.A any Atsimondrano Ampitatafika",
+        category = "Fiangonana"
+    },
+    // atsimondrano_ambatofotsy_gara.jpg
+    {
+        id = 33,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Atsimondrano Ambatofotsy-Gara",
+        description = "Fiangonana Jesosy Mamonjy M.A any Atsimondrano Ambatofotsy-Gara",
+        category = "Fiangonana"
+    },
+    // anjomakely_betoho_manjakandriana.jpg
+    {
+        id = 34,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Anjomakely Betoho Manjakandriana",
+        description = "Fiangonana Jesosy Mamonjy M.A any Anjomakely Betoho Manjakandriana",
+        category = "Fiangonana"
+    },
+    // anjanakazo_tsiroanomandidy_bongolava.jpg
+    {
+        id = 35,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Anjanakazo Tsiroanomandidy Bongolava",
+        description = "Fiangonana Jesosy Mamonjy M.A any Anjanakazo Tsiroanomandidy Bongolava",
+        category = "Fiangonana"
+    },
+    // andranovelona_antanetibe_mahazaza_ambohidratrimo.jpg
+    {
+        id = 36,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Andranovelona Antanetibe Mahazaza Ambohidratrimo",
+        description = "Fiangonana Jesosy Mamonjy M.A any Andranovelona Antanetibe Mahazaza Ambohidratrimo",
+        category = "Fiangonana"
+    },
+    // ambohitsararay_manjakandriana.jpg
+    {
+        id = 37,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Ambohitsararay Manjakandriana",
+        description = "Fiangonana Jesosy Mamonjy M.A any Ambohitsararay Manjakandriana",
+        category = "Fiangonana"
+    },
+    // ambohipo_foibe.jpg
+    {
+        id = 38,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Ambohipo Foibe",
+        description = "Fiangonana Jesosy Mamonjy M.A any Ambohipo Foibe",
+        category = "Fiangonana"
+    },
+    // ambohimamory_ambatofotsy_gara.jpg
+    {
+        id = 39,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Ambohimamory Ambatofotsy-Gara",
+        description = "Fiangonana Jesosy Mamonjy M.A any Ambohimamory Ambatofotsy-Gara",
+        category = "Fiangonana"
+    },
+    // ambohidratrimo_atsahamavory.jpg
+    {
+        id = 40,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Ambohidratrimo Atsahamavory",
+        description = "Fiangonana Jesosy Mamonjy M.A any Ambohidratrimo Atsahamavory",
+        category = "Fiangonana"
+    },
+    // ambatohazaza_mahavelona_ankazobe.png
+    {
+        id = 41,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Ambatohazaza Mahavelona Ankazobe",
+        description = "Fiangonana Jesosy Mamonjy M.A any Ambatohazaza Mahavelona Ankazobe",
+        category = "Fiangonana"
+    },
+    // ambatoazaza_ankazobe.jpg
+    {
+        id = 42,
+        title = "Jesosy Mamonjy M.A Daoud",
+        subtitle = "Ambatoazaza Ankazobe",
+        description = "Fiangonana Jesosy Mamonjy M.A any Ambatoazaza Ankazobe",
+        category = "Fiangonana"
+    },
+//evangelision_toamasina_15_16_aout_2025.webp
+{
+        id = 43
+        title = "Évangélisation" 
+        subtitle = "Toamasina" 
+        description = " Évangélisation notanterahin'ireo rahalahy sy anabavy tany Toamasina ny 15-16 Août 2025"
+        category = "Fotoana"
+},
+//fitokanampiangonana_toamasina_17_aout_2025.webp
+{
+        id = 44
+        title = "Fitokanana Fiangonana" 
+        subtitle = "Toamasina" 
+        description = "Fitokanana ny Fiangonana Jesosy Mamonjy M.A DAOUD Toamasina ny 17 Août 2025"
+        category = "Fotoana"
+

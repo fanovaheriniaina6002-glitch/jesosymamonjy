@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="260dp"
+    android:viewportWidth="200"
+    android:viewportHeight="260">
+    <path
+        android:fillColor="#8C7E75"
+        android:pathData="M0,0h200v260h-200z" />
+    <!-- Mission Globe Silhouette -->
+    <path
+        android:fillColor="#F5F0EB"
+        android:pathData="M100,95 m-36,0 a36,36 0 1,0 72,0 a36,36 0 1,0 -72,0" />
+    <path
+        android:fillColor="#781C2E"
+        android:pathData="M84,132 h32 v8 h-32 z M96,140 h8 v16 h-8 z M78,156 h44 v6 h-44 z" />
+</vector>

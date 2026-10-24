@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_gradient">
+
+    <!-- Main Fragment Host Container -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 7. FLOATING BOTTOM NAVIGATION BAR (SOLID iOS OPAQUE PILL) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/floating_bottom_nav_pill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/primary_container"
+        app:cardCornerRadius="26dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/bottom_nav_border"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_max="400dp">
+
+        <LinearLayout
+            android:id="@+id/bottom_nav_pill_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <!-- Destination 1: Fandraisana -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/nav_tab_fandraisana"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1.35"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/surface_container_lowest"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:rippleColor="@color/pill_btn_bg">
+
+                <LinearLayout
+                    android:id="@+id/nav_inner_fandraisana"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/nav_icon_fandraisana"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:contentDescription="@string/tab_fandraisana"
+                        android:src="@drawable/ic_home"
+                        app:tint="@color/primary_container" />
+
+                    <TextView
+                        android:id="@+id/nav_label_fandraisana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:fontFamily="@font/plus_jakarta_sans"
+                        android:singleLine="true"
+                        android:text="Fandraisana"
+                        android:textColor="@color/primary_container"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Destination 2: Hikaroka -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/nav_tab_hikaroka"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/primary_container"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:rippleColor="@color/pill_btn_bg">
+
+                <LinearLayout
+                    android:id="@+id/nav_inner_hikaroka"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp">
+
+                    <ImageView
+                        android:id="@+id/nav_icon_hikaroka"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:contentDescription="@string/tab_hikaroka"
+                        android:src="@drawable/ic_search"
+                        app:tint="@color/white_85" />
+
+                    <TextView
+                        android:id="@+id/nav_label_hikaroka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/plus_jakarta_sans"
+                        android:singleLine="true"
+                        android:text="Hikaroka"
+                        android:textColor="@color/white_85"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Destination 3: Hira Tiako -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/nav_tab_hira_tiako"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/primary_container"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:rippleColor="@color/pill_btn_bg">
+
+                <LinearLayout
+                    android:id="@+id/nav_inner_hira_tiako"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp">
+
+                    <ImageView
+                        android:id="@+id/nav_icon_hira_tiako"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:contentDescription="@string/tab_hira_tiako"
+                        android:src="@drawable/ic_heart"
+                        app:tint="@color/white_85" />
+
+                    <TextView
+                        android:id="@+id/nav_label_hira_tiako"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/plus_jakarta_sans"
+                        android:singleLine="true"
+                        android:text="Hira Tiako"
+                        android:textColor="@color/white_85"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Destination 4: Kaonty -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/nav_tab_kaonty"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/primary_container"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:rippleColor="@color/pill_btn_bg">
+
+                <LinearLayout
+                    android:id="@+id/nav_inner_kaonty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp">
+
+                    <ImageView
+                        android:id="@+id/nav_icon_kaonty"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:contentDescription="@string/tab_kaonty"
+                        android:src="@drawable/ic_person"
+                        app:tint="@color/white_85" />
+
+                    <TextView
+                        android:id="@+id/nav_label_kaonty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/plus_jakarta_sans"
+                        android:singleLine="true"
+                        android:text="Kaonty"
+                        android:textColor="@color/white_85"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 8. ONE-TIME ONBOARDING JETPACK COMPOSE HOST OVERLAY -->
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/onboarding_compose_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
